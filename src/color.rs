@@ -24,7 +24,7 @@ pub static TRANSPARENT_SHIFT: u32 = {
 
 #[inline]
 pub const fn color(r: u8, g: u8, b: u8, a: u8) -> u32 {
-    u32::from_le_bytes([b, g, r, a])
+    u32::from_le_bytes([r, g, b, a])
 }
 
 // #[cfg(target_endian = "little")]
